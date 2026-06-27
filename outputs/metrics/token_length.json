@@ -1,0 +1,12 @@
+{
+  "sample_size": 5000,
+  "max_seq_len": 128,
+  "truncation_rate_pct": 12.58,
+  "p50_tokens": 63,
+  "p75_tokens": 96,
+  "p90_tokens": 140,
+  "p95_tokens": 174,
+  "p99_tokens": 277,
+  "max_tokens": 841,
+  "_timestamp": "2026-06-27T14:02:59.038043+00:00"
+}

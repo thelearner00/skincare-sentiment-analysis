@@ -1,0 +1,25 @@
+{
+  "model": "TF-IDF + LogisticRegression",
+  "label_source": "rating_3class",
+  "accuracy": 0.8729,
+  "f1_weighted": 0.8852,
+  "precision_weighted": 0.9043,
+  "recall_weighted": 0.8729,
+  "f1_per_class": {
+    "negative": 0.7157,
+    "neutral": 0.4733,
+    "positive": 0.942
+  },
+  "train_size": 227875,
+  "test_size": 56969,
+  "shared_test_size": 10000,
+  "shared_test_accuracy": 0.9303,
+  "shared_test_f1_weighted": 0.9363,
+  "grid_search_best_params": {
+    "clf__C": 10.0,
+    "tfidf__max_features": 20000
+  },
+  "grid_search_best_cv_f1": 0.8848,
+  "notes": "class_weight=balanced, no undersampling, negations preserved in stopword removal; C and max_features from 3-fold grid search. WARNING: shared_test_* metrics are inflated \u2014 the TF-IDF trains on ~80% of the full 284k corpus, so ~80% of the 10k shared rows were already in its training set. The primary accuracy/f1_weighted from the TF-IDF's own 57k held-out set are the honest numbers.",
+  "_timestamp": "2026-06-27T14:28:58.392395+00:00"
+}

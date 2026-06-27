@@ -1,0 +1,20 @@
+{
+  "model": "distilbert-base-uncased",
+  "label_source": "rating_3class",
+  "accuracy": 0.9117,
+  "f1_weighted": 0.9146,
+  "precision_weighted": 0.9182,
+  "recall_weighted": 0.9117,
+  "f1_per_class": {
+    "negative": 0.7679,
+    "neutral": 0.5343,
+    "positive": 0.9659
+  },
+  "train_size": 35000,
+  "val_size": 5000,
+  "test_size": 10000,
+  "epochs": 3,
+  "device": "mps",
+  "notes": "WeightedTrainer, natural-language input, 3-class rating label",
+  "_timestamp": "2026-06-27T15:05:04.895683+00:00"
+}

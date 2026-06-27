@@ -1,0 +1,6 @@
+model,label_type,num_classes,accuracy,f1_weighted,n_test,notes
+Majority-class baseline (always predict positive),rating (3-class),3,0.8285,,56969.0,Lower bound — predict the most frequent class every time
+This project — TF-IDF + LogReg,rating (3-class),3,0.8729,0.8852,56969.0,"class_weight=balanced, negations preserved; shared-test F1=0.9363"
+This project — distilbert-base-uncased,rating (3-class),3,0.9117,0.9146,10000.0,"WeightedTrainer, natural-language input, 66M params"
+— Reference — LSTM (DIFFERENT TASK),is_recommended (binary) ← not comparable,2,0.94,,,Binary label; random baseline=50% vs 33% for our task. Not directly comparable.
+— Reference — bert-tiny (DIFFERENT TASK),is_recommended (binary) ← not comparable,2,0.889,,,"bert-tiny 4.4M params, stemmed input; binary label. Not directly comparable."

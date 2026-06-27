@@ -1,0 +1,36 @@
+# Data — raw CSVs and pipeline intermediates (not ours to redistribute; regenerate with pipeline)
+data/
+
+# Trained model weights — too large for GitHub (255 MB+ each file)
+# Upload to Hugging Face Hub separately, or regenerate with: python3 src/train_transformer.py
+outputs/transformer_model/
+
+# Pipeline log (ephemeral)
+outputs/pipeline.log
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments (none used, but safe to exclude)
+venv/
+.venv/
+env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp

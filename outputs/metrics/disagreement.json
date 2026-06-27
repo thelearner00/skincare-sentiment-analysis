@@ -1,0 +1,10 @@
+{
+  "scope": "transformer_test_set_only",
+  "total_reviews_analyzed": 8012,
+  "disagreement_count": 174,
+  "disagreement_rate_pct": 2.17,
+  "recommended_but_negative": 92,
+  "not_recommended_but_positive": 82,
+  "note": "Neutral predictions (class 1) excluded from both disagreement categories by design",
+  "_timestamp": "2026-06-27T15:05:44.431031+00:00"
+}
